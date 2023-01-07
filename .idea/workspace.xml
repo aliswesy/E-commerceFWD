@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15f22ea6-8115-4368-8133-2aec6b26baf6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/tc_2_login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/LoginTC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/RegisterTC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/RegisterTC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_1_register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/register.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cukes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cukes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/RegisterTC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/RegisterTC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/Hooks.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +62,25 @@
   }
 }]]></component>
   <component name="RunManager" selected="JUnit.Runners">
+    <configuration name="Feature: login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/login.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="E-commerce" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: register" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/register.feature" />
@@ -100,6 +118,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runners" />
+        <item itemvalue="Cucumber Java.Feature: login" />
         <item itemvalue="Cucumber Java.Feature: register" />
       </list>
     </recent_temporary>

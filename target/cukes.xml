@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.596">
-    <testcase classname="user should be able to create a new account" name="user could register to website" time="11.366">
-        <system-out><![CDATA[Given user open browser and goes to register page...........................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="37.697">
+    <testcase classname="user should be able to create a new account" name="user could register to website" time="20.313">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&quot;result&quot;]&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [3635f9f6a817feb98950f4c8ad86227b, findElement {using=css selector, value=div[class=&quot;result&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\needf\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59959/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3635f9f6a817feb98950f4c8ad86227b" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user open browser and goes to register page...........................passed
 When user selects gender type...............................................passed
 And user enters "firstName" and "lastLame"..................................passed
 And user choose date of birth...............................................passed
 And user enters email address "test@test.com"...............................passed
 And user enters password fields "123123"....................................passed
 And user press on register..................................................passed
-Then register message is displayed "Your registration completed"............passed
+Then register message is displayed "Your registration completed"............failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class="result"]"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3635f9f6a817feb98950f4c8ad86227b, findElement {using=css selector, value=div[class="result"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\needf\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59959/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3635f9f6a817feb98950f4c8ad86227b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.example.pages.RegisterPage.registerMessage(RegisterPage.java:58)
+	at org.example.stepDefs.RegisterTC.registerMessage(RegisterTC.java:55)
+	at ✽.register message is displayed "Your registration completed"(file:///E:/Data/Ali/Work/FWD%20Testing/E-commerce/src/main/resources/features/tc_1_register.feature:12)
+]]></failure>
+    </testcase>
+    <testcase classname="User should be able to login to his account" name="user login with valid data" time="8.91">
+        <system-out><![CDATA[Given user goes to login page...............................................passed
+When user enters data "test@test.com" and "123123"..........................passed
+And user press on login.....................................................passed
+Then user login successfully................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User should be able to login to his account" name="user login with invalid data" time="8.193">
+        <system-out><![CDATA[Given user goes to login page...............................................passed
+When user enters data "notTes@test.com" and "123123"........................passed
+And user press on login.....................................................passed
+Then user login failed......................................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
