@@ -1,0 +1,4 @@
+org\example\pages\RegisterPage.class
+org\example\runners\Runners.class
+org\example\stepDefs\Hooks.class
+org\example\stepDefs\RegisterTC.class
