@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="20.081">
-    <testcase classname="user should be able to create a new account" name="user could register to website" time="19.891">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.596">
+    <testcase classname="user should be able to create a new account" name="user could register to website" time="11.366">
         <system-out><![CDATA[Given user open browser and goes to register page...........................passed
+When user selects gender type...............................................passed
+And user enters "firstName" and "lastLame"..................................passed
+And user choose date of birth...............................................passed
+And user enters email address "test@test.com"...............................passed
+And user enters password fields "123123"....................................passed
+And user press on register..................................................passed
+Then register message is displayed "Your registration completed"............passed
 ]]></system-out>
     </testcase>
 </testsuite>
