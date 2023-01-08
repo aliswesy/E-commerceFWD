@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 import org.example.pages.ResetPasswordPage;
 import org.testng.asserts.SoftAssert;
 
-public class ResetPassword {
+public class ResetPasswordTC {
     ResetPasswordPage resetPassword = new ResetPasswordPage();
     SoftAssert softAssert = new SoftAssert();
 

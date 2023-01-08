@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="45.696">
-    <testcase classname="user should be able to create a new account" name="user could register to website" time="12.497">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="64.344">
+    <testcase classname="user should be able to create a new account" name="user could register to website" time="11.738">
         <system-out><![CDATA[Given user open browser and goes to register page...........................passed
 When user selects gender type...............................................passed
 And user enters "firstName" and "lastLame"..................................passed
@@ -11,25 +11,41 @@ And user press on register..................................................pass
 Then register message is displayed "Your registration completed"............passed
 ]]></system-out>
     </testcase>
-    <testcase classname="User should be able to login to his account" name="user login with valid data" time="11.093">
+    <testcase classname="User should be able to login to his account" name="user login with valid data" time="9.374">
         <system-out><![CDATA[Given user goes to login page...............................................passed
 When user enters data "test@test.com" and "123123"..........................passed
 And user press on login.....................................................passed
 Then user login successfully................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="User should be able to login to his account" name="user login with invalid data" time="9.334">
+    <testcase classname="User should be able to login to his account" name="user login with invalid data" time="9.785">
         <system-out><![CDATA[Given user goes to login page...............................................passed
 When user enters data "notTes@test.com" and "123123"........................passed
 And user press on login.....................................................passed
 Then user login failed......................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="user should be able to reset his/her password" name="user will reset password throw the forget password" time="12.486">
+    <testcase classname="user should be able to reset his/her password" name="user will reset password throw the forget password" time="11.551">
         <system-out><![CDATA[Given user goes to reset password page......................................passed
 When user enters his/her email "test@test.com"..............................passed
 And press recover...........................................................passed
 Then confirmation message is displayed......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user could search for products" name="user could search for products name" time="10.31">
+        <system-out><![CDATA[Given user is logged in "test@test.com" and "123123"........................passed
+When user goes to search bar and enters "phone".............................passed
+And user clicks on search...................................................passed
+Then search result will appear..............................................passed
+But search word can't be less than 3 letters................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user could search for products" name="user could search for products name 2" time="11.282">
+        <system-out><![CDATA[Given user is logged in "test@test.com" and "123123"........................passed
+When user goes to search bar and enters "lap"...............................passed
+And user clicks on search...................................................passed
+Then search result will appear..............................................passed
+But search word can't be less than 3 letters................................passed
 ]]></system-out>
     </testcase>
 </testsuite>
