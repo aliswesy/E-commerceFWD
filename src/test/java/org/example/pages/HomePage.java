@@ -10,6 +10,9 @@ import java.util.List;
 public class HomePage {
     WebDriver driver = Hooks.driver;
 
+    /**
+     * Search Product Test Case
+     */
     //find search bar
     public WebElement searchBar(){
         return driver.findElement(By.id("small-searchterms"));
@@ -40,4 +43,31 @@ public class HomePage {
         else return driver.findElement(By.cssSelector("div[class=\"warning\"]"));
     }
 
+    /**
+     * Switch Currency Test Case
+     */
+    //Find the currency bar
+    public WebElement currencyBar() {
+        return driver.findElement(By.id("customerCurrency"));
+    }
+
+    //return the not selected currency
+    public WebElement switchCurrency(){
+        WebElement us_dollar = driver.findElement(By.cssSelector("option[value=\"https://demo.nopcommerce.com/changecurrency/1?returnUrl=%2F\"]"));
+        WebElement euro = driver.findElement(By.cssSelector("option[value=\"https://demo.nopcommerce.com/changecurrency/6?returnUrl=%2F\"]"));
+        return us_dollar.isSelected() ? euro : us_dollar;
+
+    }
+
+    //return selected currency
+    public WebElement selectedCurrency(){
+        WebElement us_dollar = driver.findElement(By.cssSelector("option[value=\"https://demo.nopcommerce.com/changecurrency/1?returnUrl=%2F\"]"));
+        WebElement euro = driver.findElement(By.cssSelector("option[value=\"https://demo.nopcommerce.com/changecurrency/6?returnUrl=%2F\"]"));
+        return us_dollar.isSelected() ? us_dollar : euro;
+    }
+
+    //return a list of products
+    public List<WebElement> item_box(){
+        return driver.findElements(By.cssSelector("div[class=\"item-box\"]"));
+    }
 }

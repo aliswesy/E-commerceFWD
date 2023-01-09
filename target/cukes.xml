@@ -1,38 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="64.344">
-    <testcase classname="user should be able to create a new account" name="user could register to website" time="11.738">
-        <system-out><![CDATA[Given user open browser and goes to register page...........................passed
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="87.998">
+    <testcase classname="user should be able to create a new account" name="user could register to website" time="21.873">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&quot;result&quot;]&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.2', revision: '4d4020c3b7'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [8ee6265c1089d5e50b7b5bfabe6cc52f, findElement {using=css selector, value=div[class=&quot;result&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\needf\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63958}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63958/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ee6265c1089d5e50b7b5bfabe6cc52f" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user open browser and goes to register page...........................passed
 When user selects gender type...............................................passed
 And user enters "firstName" and "lastLame"..................................passed
 And user choose date of birth...............................................passed
 And user enters email address "test@test.com"...............................passed
 And user enters password fields "123123"....................................passed
 And user press on register..................................................passed
-Then register message is displayed "Your registration completed"............passed
-]]></system-out>
+Then register message is displayed "Your registration completed"............failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class="result"]"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ee6265c1089d5e50b7b5bfabe6cc52f, findElement {using=css selector, value=div[class="result"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\needf\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63958}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63958/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ee6265c1089d5e50b7b5bfabe6cc52f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at org.example.pages.RegisterPage.registerMessage(RegisterPage.java:58)
+	at org.example.stepDefs.RegisterTC.registerMessage(RegisterTC.java:55)
+	at ✽.register message is displayed "Your registration completed"(file:///E:/Data/Ali/Work/FWD%20Testing/E-commerce/src/main/resources/features/tc_1_register.feature:12)
+]]></failure>
     </testcase>
-    <testcase classname="User should be able to login to his account" name="user login with valid data" time="9.374">
+    <testcase classname="User should be able to login to his account" name="user login with valid data" time="9.742">
         <system-out><![CDATA[Given user goes to login page...............................................passed
 When user enters data "test@test.com" and "123123"..........................passed
 And user press on login.....................................................passed
 Then user login successfully................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="User should be able to login to his account" name="user login with invalid data" time="9.785">
+    <testcase classname="User should be able to login to his account" name="user login with invalid data" time="10.174">
         <system-out><![CDATA[Given user goes to login page...............................................passed
 When user enters data "notTes@test.com" and "123123"........................passed
 And user press on login.....................................................passed
 Then user login failed......................................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="user should be able to reset his/her password" name="user will reset password throw the forget password" time="11.551">
+    <testcase classname="user should be able to reset his/her password" name="user will reset password throw the forget password" time="11.684">
         <system-out><![CDATA[Given user goes to reset password page......................................passed
 When user enters his/her email "test@test.com"..............................passed
 And press recover...........................................................passed
 Then confirmation message is displayed......................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="user could search for products" name="user could search for products name" time="10.31">
+    <testcase classname="user could search for products" name="user could search for products name" time="11.148">
         <system-out><![CDATA[Given user is logged in "test@test.com" and "123123"........................passed
 When user goes to search bar and enters "phone".............................passed
 And user clicks on search...................................................passed
@@ -40,12 +68,29 @@ Then search result will appear..............................................pass
 But search word can't be less than 3 letters................................passed
 ]]></system-out>
     </testcase>
-    <testcase classname="user could search for products" name="user could search for products name 2" time="11.282">
+    <testcase classname="user could search for products" name="user could search for products name 2" time="11.989">
         <system-out><![CDATA[Given user is logged in "test@test.com" and "123123"........................passed
 When user goes to search bar and enters "lap"...............................passed
 And user clicks on search...................................................passed
 Then search result will appear..............................................passed
 But search word can't be less than 3 letters................................passed
 ]]></system-out>
+    </testcase>
+    <testcase classname="User should be able to switch currencies" name="user switch between currencies US-Euro" time="11.023">
+        <failure message="The following asserts failed:&#10;&#9;expected [true] but found [false],&#10;&#9;expected [true] but found [false],&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user is logged in "test@test.com" and "123123"........................passed
+When user click on currency bar.............................................passed
+And choose different currency...............................................passed
+Then currency will change...................................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org.example.stepDefs.SwitchCurrencyTC.currencyCheck(SwitchCurrencyTC.java:33)
+	at ✽.currency will change(file:///E:/Data/Ali/Work/FWD%20Testing/E-commerce/src/main/resources/features/tc_5_switchCurrency.feature:10)
+]]></failure>
     </testcase>
 </testsuite>
