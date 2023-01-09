@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import java.util.List;
 
 public class HomePage {
+
     WebDriver driver = Hooks.driver;
     Actions action = new Actions(driver);
 
@@ -68,9 +69,11 @@ public class HomePage {
         return us_dollar.isSelected() ? us_dollar : euro;
     }
 
-    //return a list of products
+    //return a list of displayed products
     public List<WebElement> item_box(){
-        return driver.findElements(By.cssSelector("div[class=\"item-box\"]"));
+        List<WebElement> displayed_items = driver.findElements(By.cssSelector("div[class=\"item-box\"]"));
+        displayed_items.removeIf(item -> !item.isDisplayed());
+        return displayed_items;
     }
 
     /**
@@ -97,4 +100,20 @@ public class HomePage {
     public WebElement categoryHead(){
         return driver.findElement(By.cssSelector("div[class=\"page-title\"]"));
     }
+
+    /**
+     * Filter by color methods
+     */
+
+    //find color
+    public WebElement findColor(String color){
+        List<WebElement> colors = driver.findElements(By.cssSelector("li[class=\"item" + " " +"color-item\"]"));
+        for (WebElement colorElement :
+                colors) {
+            if(colorElement.getText().contains(color))
+                return colorElement;
+        }
+        return colors.get(0);
+    }
+
 }
