@@ -4,11 +4,13 @@ import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
 
 public class HomePage {
     WebDriver driver = Hooks.driver;
+    Actions action = new Actions(driver);
 
     /**
      * Search Product Test Case
@@ -69,5 +71,30 @@ public class HomePage {
     //return a list of products
     public List<WebElement> item_box(){
         return driver.findElements(By.cssSelector("div[class=\"item-box\"]"));
+    }
+
+    /**
+     * Category select methods
+     */
+
+    //return category
+    public WebElement findCategory(String category){
+        return driver.findElement(By.cssSelector("a[href=\"/"+ category.toLowerCase() + "\"]"));
+    }
+
+    //hover over selected category
+    public void hoverCategory(String category){
+
+       WebElement categoryElement = driver.findElement(By.cssSelector("a[href=\"/"+ category.toLowerCase() + "\"]"));
+       action.moveToElement(categoryElement).perform();
+    }
+
+    //return sub category
+    public WebElement findSubCategory(String sub_category){
+        return driver.findElement(By.cssSelector("a[href=\"/"+ sub_category.toLowerCase() + "\"]"));
+    }
+
+    public WebElement categoryHead(){
+        return driver.findElement(By.cssSelector("div[class=\"page-title\"]"));
     }
 }
