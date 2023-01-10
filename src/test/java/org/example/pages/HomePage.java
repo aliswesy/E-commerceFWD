@@ -130,4 +130,8 @@ public class HomePage {
                 .until(driver -> driver.findElement(By.cssSelector("div[class=\"product-tags-list\"]")));
     }
 
+    //return the "ADD TO CART" element of the passed item
+    public WebElement addToCart(WebElement item){
+        return item.findElement(By.cssSelector("button[class=\"button-2 product-box-add-to-cart-button\"]"));
+    }
 }
