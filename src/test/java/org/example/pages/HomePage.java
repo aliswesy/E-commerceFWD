@@ -132,6 +132,19 @@ public class HomePage {
 
     //return the "ADD TO CART" element of the passed item
     public WebElement addToCart(WebElement item){
-        return item.findElement(By.cssSelector("button[class=\"button-2 product-box-add-to-cart-button\"]"));
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(driver -> driver.findElement(By.cssSelector("button[class=\"button-2 product-box-add-to-cart-button\"]")));
     }
+
+    //return the "wishlist" element of the passed item
+    public WebElement addToWishlist(WebElement item){
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(driver -> driver.findElement(By.cssSelector("button[class=\"button-2 add-to-wishlist-button\"]")));
+    }
+
+    public WebElement findElementInWishlist(){
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(driver -> driver.findElement(By.cssSelector("span[class=\"sku-number\"]")));
+    }
+
 }
