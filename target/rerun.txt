@@ -1,2 +1,0 @@
-file:src/main/resources/features/tc_1_register.feature:4
-file:src/main/resources/features/tc_5_switchCurrency.feature:7

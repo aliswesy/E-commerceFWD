@@ -5,7 +5,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.List;
 
 public class HomePage {
@@ -17,33 +20,32 @@ public class HomePage {
      * Search Product Test Case
      */
     //find search bar
-    public WebElement searchBar(){
+    public WebElement searchBar() {
         return driver.findElement(By.id("small-searchterms"));
     }
 
     //search button
-    public WebElement searchBtn(){
+    public WebElement searchBtn() {
         return driver.findElement(By.cssSelector("button[type=\"submit\"]"));
     }
 
-    public String searchUrl(){
+    public String searchUrl() {
         return driver.getCurrentUrl();
     }
 
-    public int searchCount(){
+    public int searchCount() {
         int count;
         if (driver.findElement(By.cssSelector("div[class=\"item-box\"]")).isDisplayed()) {
             count = driver.findElements(By.cssSelector("div[class=\"item-box\"]")).size();
-        }
-        else count = 0;
+        } else count = 0;
 
         return count;
     }
 
-    public WebElement searchCheck(){
-        if (driver.findElement(By.cssSelector("div[class=\"item-box\"]")).isDisplayed()){
-        return null;}
-        else return driver.findElement(By.cssSelector("div[class=\"warning\"]"));
+    public WebElement searchCheck() {
+        if (driver.findElement(By.cssSelector("div[class=\"item-box\"]")).isDisplayed()) {
+            return null;
+        } else return driver.findElement(By.cssSelector("div[class=\"warning\"]"));
     }
 
     /**
@@ -55,7 +57,7 @@ public class HomePage {
     }
 
     //return the not selected currency
-    public WebElement switchCurrency(){
+    public WebElement switchCurrency() {
         WebElement us_dollar = driver.findElement(By.cssSelector("option[value=\"https://demo.nopcommerce.com/changecurrency/1?returnUrl=%2F\"]"));
         WebElement euro = driver.findElement(By.cssSelector("option[value=\"https://demo.nopcommerce.com/changecurrency/6?returnUrl=%2F\"]"));
         return us_dollar.isSelected() ? euro : us_dollar;
@@ -63,15 +65,17 @@ public class HomePage {
     }
 
     //return selected currency
-    public WebElement selectedCurrency(){
+    public WebElement selectedCurrency() {
         WebElement us_dollar = driver.findElement(By.cssSelector("option[value=\"https://demo.nopcommerce.com/changecurrency/1?returnUrl=%2F\"]"));
         WebElement euro = driver.findElement(By.cssSelector("option[value=\"https://demo.nopcommerce.com/changecurrency/6?returnUrl=%2F\"]"));
         return us_dollar.isSelected() ? us_dollar : euro;
     }
 
     //return a list of displayed products
-    public List<WebElement> item_box(){
-        List<WebElement> displayed_items = driver.findElements(By.cssSelector("div[class=\"item-box\"]"));
+    public List<WebElement> item_box() {
+        List<WebElement> displayed_items = new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector("div[class=\"item-box\"]")));
+//                driver.findElements(By.cssSelector("div[class=\"item-box\"]"));
         displayed_items.removeIf(item -> !item.isDisplayed());
         return displayed_items;
     }
@@ -80,25 +84,22 @@ public class HomePage {
      * Category select methods
      */
 
-    //return category
-    public WebElement findCategory(String category){
-        return driver.findElement(By.cssSelector("a[href=\"/"+ category.toLowerCase() + "\"]"));
+    //return an element with the passed href passed
+    public WebElement findElementByHref(String name) {
+        return driver.findElement(By.cssSelector("a[href=\"/" + name.toLowerCase() + "\"]"));
     }
 
     //hover over selected category
-    public void hoverCategory(String category){
+    public void hoverCategory(String category) {
 
-       WebElement categoryElement = driver.findElement(By.cssSelector("a[href=\"/"+ category.toLowerCase() + "\"]"));
-       action.moveToElement(categoryElement).perform();
+        WebElement categoryElement = driver.findElement(By.cssSelector("a[href=\"/" + category.toLowerCase() + "\"]"));
+        action.moveToElement(categoryElement).perform();
     }
 
-    //return sub category
-    public WebElement findSubCategory(String sub_category){
-        return driver.findElement(By.cssSelector("a[href=\"/"+ sub_category.toLowerCase() + "\"]"));
-    }
-
-    public WebElement categoryHead(){
-        return driver.findElement(By.cssSelector("div[class=\"page-title\"]"));
+    //Return the text of the page title
+    public String pageTitle() {
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(driver -> driver.findElement(By.cssSelector("div[class=\"page-title\"]")).getText());
     }
 
     /**
@@ -106,14 +107,27 @@ public class HomePage {
      */
 
     //find color
-    public WebElement findColor(String color){
-        List<WebElement> colors = driver.findElements(By.cssSelector("li[class=\"item" + " " +"color-item\"]"));
+    public WebElement findColor(String color) {
+        List<WebElement> colors = driver.findElements(By.cssSelector("li[class=\"item" + " " + "color-item\"]"));
         for (WebElement colorElement :
                 colors) {
-            if(colorElement.getText().contains(color))
+            if (colorElement.getText().contains(color))
                 return colorElement;
         }
         return colors.get(0);
+    }
+
+
+    //returns a list of item's popular tags
+    public List<WebElement> itemPopularTags(){
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(driver -> driver.findElements(By.cssSelector("li[class=\"tag\"]")));
+    }
+
+    //returns element product tag list
+    public WebElement productTagList(){
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(driver -> driver.findElement(By.cssSelector("div[class=\"product-tags-list\"]")));
     }
 
 }
