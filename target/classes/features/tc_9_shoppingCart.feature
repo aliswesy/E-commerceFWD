@@ -3,7 +3,7 @@ Feature: user should be able to add items to shopping cart
 
   Background: user login
     Given user is logged in "test@test.com" and "123123"
-    And select "Electronics" or "Cell phones"
+    And select "Electronics" or "Cell-phones"
 
   Scenario: user add product to shopping cart
     When user clicks on ADD TO CART

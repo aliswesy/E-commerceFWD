@@ -24,6 +24,7 @@ public class SwitchCurrencyTC {
 
     @Then("currency will change")
     public void currencyCheck() throws InterruptedException {
+        Thread.sleep(2_000);
         softAssert.assertTrue(homePage.selectedCurrency().getText().contains("Euro"));
         softAssert.assertAll();
     }

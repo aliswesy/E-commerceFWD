@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15f22ea6-8115-4368-8133-2aec6b26baf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/tc_9_wishlist.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/WishlistTC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/tc_11_compareList.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/CompareListTC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_9_shoppingCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_9_shoppingCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_9_wishlist.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_10_wishlist.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/SwitchCurrencyTC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/SwitchCurrencyTC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/features/tc_9_shoppingCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/tc_9_shoppingCart.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cukes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cukes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/SwitchCurrencyTC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/SwitchCurrencyTC.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,15 +75,15 @@
       <recent name="org.example.stepDefs" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: tc_9_wishlist">
-    <configuration name="Feature: tc_7_colorFilter" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: tc_11_compareList">
+    <configuration name="Feature: tc_11_compareList" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/tc_7_colorFilter.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/tc_11_compareList.feature" />
       <option name="GLUE" value="org.example.stepDefs" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="E-commerce" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: tc_7_colorFilter" />
+      <option name="SUGGESTED_NAME" value="Feature: tc_11_compareList" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -161,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: tc_11_compareList" />
+        <item itemvalue="JUnit.Runners" />
         <item itemvalue="Cucumber Java.Feature: tc_9_wishlist" />
         <item itemvalue="Cucumber Java.Feature: tc_9_shoppingCart" />
-        <item itemvalue="JUnit.Runners" />
         <item itemvalue="Cucumber Java.Feature: tc_8_tagSelect" />
-        <item itemvalue="Cucumber Java.Feature: tc_7_colorFilter" />
       </list>
     </recent_temporary>
   </component>

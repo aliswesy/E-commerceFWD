@@ -4,6 +4,9 @@ import org.example.stepDefs.Hooks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class RegisterPage {
     WebDriver driver = Hooks.driver;
@@ -55,6 +58,8 @@ public class RegisterPage {
     }
 
     public WebElement registerMessage(){
-        return driver.findElement(By.cssSelector("div[class=\"result\"]"));
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(driver ->driver.findElement(By.cssSelector("div[class=\"result\"]")));
+
     }
 }

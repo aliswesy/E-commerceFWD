@@ -142,6 +142,12 @@ public class HomePage {
                 .until(driver -> driver.findElement(By.cssSelector("button[class=\"button-2 add-to-wishlist-button\"]")));
     }
 
+    //return the "compare" element of the passed item
+    public WebElement addToCompareList(WebElement item){
+        return new WebDriverWait(driver, Duration.ofSeconds(10))
+                .until(driver -> driver.findElement(By.cssSelector("button[class=\"button-2 add-to-compare-list-button\"]")));
+    }
+
     public WebElement findElementInWishlist(){
         return new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(driver -> driver.findElement(By.cssSelector("span[class=\"sku-number\"]")));
