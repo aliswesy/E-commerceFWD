@@ -1,1 +1,3 @@
-file:src/main/resources/features/tc_1_register.feature:4
+file:src/main/resources/features/tc_e_switchCurrency.feature:7
+file:src/main/resources/features/tc_l_createOrder.feature:8
+file:src/main/resources/features/tc_a_register.feature:4

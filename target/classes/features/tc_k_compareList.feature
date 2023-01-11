@@ -2,7 +2,7 @@
 Feature: user should be able to add items to compare list
 
   Background: user login
-#    Given user is logged in "test@test.com" and "123123"
+    Given user is logged in "test@test.com" and "123123"
     And select "Electronics" or "Cell-phones"
 
   Scenario: user add product to compare list

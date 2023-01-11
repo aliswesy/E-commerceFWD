@@ -5,21 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15f22ea6-8115-4368-8133-2aec6b26baf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/tc_11_compareList.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/CompareListTC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/features/tc_l_createOrder.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/CreateOrderTC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_9_shoppingCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_9_shoppingCart.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_9_wishlist.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_10_wishlist.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/SwitchCurrencyTC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/SwitchCurrencyTC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_9_shoppingCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/features/tc_9_shoppingCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_10_wishlist.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_j_wishlist.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_11_compareList.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_k_compareList.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_1_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_a_register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_2_login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_b_login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_3_resetPassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_c_resetPassword.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_4_searchProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_d_searchProduct.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_5_switchCurrency.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_e_switchCurrency.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_6_selectCategories.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_f_selectCategories.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_7_colorFilter.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_g_colorFilter.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_8_tagSelect.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_h_tagSelect.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_9_shoppingCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_i_shoppingCart.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_10_wishlist.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_11_compareList.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_1_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_2_login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_3_resetPassword.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_4_searchProduct.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_5_switchCurrency.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_6_selectCategories.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_7_colorFilter.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_8_tagSelect.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_9_shoppingCart.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cukes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cukes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerun.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/SwitchCurrencyTC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/SwitchCurrencyTC.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +90,7 @@
       <recent name="org.example.stepDefs" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: tc_11_compareList">
+  <component name="RunManager" selected="JUnit.Runners">
     <configuration name="Feature: tc_11_compareList" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/tc_11_compareList.feature" />
@@ -169,8 +184,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: tc_11_compareList" />
         <item itemvalue="JUnit.Runners" />
+        <item itemvalue="Cucumber Java.Feature: tc_11_compareList" />
         <item itemvalue="Cucumber Java.Feature: tc_9_wishlist" />
         <item itemvalue="Cucumber Java.Feature: tc_9_shoppingCart" />
         <item itemvalue="Cucumber Java.Feature: tc_8_tagSelect" />
