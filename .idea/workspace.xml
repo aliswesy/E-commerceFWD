@@ -5,36 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15f22ea6-8115-4368-8133-2aec6b26baf6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/features/tc_l_createOrder.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/ShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/CreateOrderTC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_10_wishlist.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_j_wishlist.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_11_compareList.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_k_compareList.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_1_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_a_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_2_login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_b_login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_3_resetPassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_c_resetPassword.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_4_searchProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_d_searchProduct.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_5_switchCurrency.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_e_switchCurrency.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_6_selectCategories.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_f_selectCategories.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_7_colorFilter.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_g_colorFilter.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_8_tagSelect.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_h_tagSelect.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/tc_9_shoppingCart.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/features/tc_i_shoppingCart.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_10_wishlist.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_11_compareList.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_1_register.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_2_login.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_3_resetPassword.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_4_searchProduct.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_5_switchCurrency.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_6_selectCategories.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_7_colorFilter.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_8_tagSelect.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/features/tc_9_shoppingCart.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/E-commerce-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/E-commerce-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-failures.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-features.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-steps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/overview-tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-feature_824522373.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_233058432.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-reports/report-tag_233058432.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/cukes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cukes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/rerun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/rerun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-01-07T03-13-09_131.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-org.example.runners.Runners.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/org.example.runners.Runners.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/ShoppingCart.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,19 +60,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/Data/Ali/Work/FWD Testing/E-commerce/src/main/resources/features",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MavenSettings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Data/Ali/Work/FWD Testing/E-commerce/src/main/resources/features&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Data\Ali\Work\FWD Testing\E-commerce\src\main\resources\features" />
@@ -205,5 +196,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

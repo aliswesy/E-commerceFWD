@@ -33,22 +33,22 @@ public class ShoppingCart {
 
     public WebElement shippingButton(){
         return new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(driver -> driver.findElement(By.className("button-1 shipping-method-next-step-button")));
+                .until(driver -> driver.findElement(By.cssSelector("button[class=\"button-1 shipping-method-next-step-button\"")));
     }
 
     public WebElement paymentButton(){
         return new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(driver -> driver.findElement(By.className("button-1 payment-method-next-step-button")));
+                .until(driver -> driver.findElement(By.cssSelector("button[class=\"button-1 payment-method-next-step-button\"")));
     }
 
     public WebElement paymentInfoButton(){
         return new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(driver -> driver.findElement(By.className("button-1 payment-info-next-step-button")));
+                .until(driver -> driver.findElement(By.cssSelector("button[class=\"button-1 payment-info-next-step-button\"")));
     }
 
     public WebElement confirmButton(){
         return new WebDriverWait(driver, Duration.ofSeconds(10))
-                .until(driver -> driver.findElement(By.className("button-1 confirm-order-next-step-button")));
+                .until(driver -> driver.findElement(By.cssSelector("button[class=\"button-1 confirm-order-next-step-button\"")));
     }
 
     //conformation message
