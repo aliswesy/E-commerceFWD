@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="15f22ea6-8115-4368-8133-2aec6b26baf6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/pages/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/pages/ShoppingCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/CreateOrderTC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/stepDefs/CreateOrderTC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/pages/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/pages/ShoppingCart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/CreateOrderTC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/stepDefs/CreateOrderTC.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +65,7 @@
       <recent name="org.example.stepDefs" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runners">
+  <component name="RunManager" selected="Cucumber Java.Feature: tc_l_createOrder">
     <configuration name="Feature: tc_11_compareList" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/tc_11_compareList.feature" />
@@ -70,44 +74,6 @@
       <module name="E-commerce" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: tc_11_compareList" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: tc_8_tagSelect" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/tc_8_tagSelect.feature" />
-      <option name="GLUE" value="org.example.stepDefs" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="E-commerce" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: tc_8_tagSelect" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: tc_9_shoppingCart" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/tc_9_shoppingCart.feature" />
-      <option name="GLUE" value="org.example.stepDefs" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="E-commerce" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: tc_9_shoppingCart" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -138,6 +104,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Feature: tc_a_register" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/tc_a_register.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="E-commerce" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: tc_a_register" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: tc_l_createOrder" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/tc_l_createOrder.feature" />
+      <option name="GLUE" value="org.example.stepDefs" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="E-commerce" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: tc_l_createOrder" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runners" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="E-commerce" />
       <extension name="coverage">
@@ -155,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: tc_l_createOrder" />
+        <item itemvalue="Cucumber Java.Feature: tc_a_register" />
         <item itemvalue="JUnit.Runners" />
         <item itemvalue="Cucumber Java.Feature: tc_11_compareList" />
         <item itemvalue="Cucumber Java.Feature: tc_9_wishlist" />
-        <item itemvalue="Cucumber Java.Feature: tc_9_shoppingCart" />
-        <item itemvalue="Cucumber Java.Feature: tc_8_tagSelect" />
       </list>
     </recent_temporary>
   </component>

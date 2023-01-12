@@ -25,21 +25,23 @@ public class CreateOrderTC {
 
     @And("enter Billing address data")
     public void billingAddressData(){
-        //pass country
-        shoppingCart.billingFiled("CountryId").sendKeys("eg");
-        shoppingCart.billingFiled("CountryId").sendKeys(Keys.RETURN);
+        if (shoppingCart.billingField("CountryId").isDisplayed()) {
+            //pass country
+            shoppingCart.billingField("CountryId").sendKeys("eg");
+            shoppingCart.billingField("CountryId").sendKeys(Keys.RETURN);
 
-        //pass city
-        shoppingCart.billingFiled("City").sendKeys("cairo");
+            //pass city
+            shoppingCart.billingField("City").sendKeys("cairo");
 
-        //pass address 1
-        shoppingCart.billingFiled("Address1").sendKeys("test Address");
+            //pass address 1
+            shoppingCart.billingField("Address1").sendKeys("test Address");
 
-        //pass zip
-        shoppingCart.billingFiled("ZipPostalCode").sendKeys("0000");
+            //pass zip
+            shoppingCart.billingField("ZipPostalCode").sendKeys("0000");
 
-        //pass phone number
-        shoppingCart.billingFiled("PhoneNumber").sendKeys("0123456789");
+            //pass phone number
+            shoppingCart.billingField("PhoneNumber").sendKeys("0123456789");
+        }
 
         shoppingCart.billingButton().click();
     }

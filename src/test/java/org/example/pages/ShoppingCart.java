@@ -21,8 +21,8 @@ public class ShoppingCart {
         return driver.findElement(By.id("checkout"));
     }
 
-    //return the filed for the passed filed name
-    public WebElement billingFiled(String name){
+    //return the filed for the passed field name
+    public WebElement billingField(String name){
         return new WebDriverWait(driver, Duration.ofSeconds(10))
                 .until(driver -> driver.findElement(By.id("BillingNewAddress_" + name)));
     }
